@@ -15,18 +15,7 @@ import Section6 from "./components/Section6";
 import Section7 from "./components/Section7";
 import Section8 from "./components/Section8";
 import Footer from "./components/Footer";
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-
-
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",

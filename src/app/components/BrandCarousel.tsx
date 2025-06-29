@@ -48,12 +48,12 @@ const BrandCarousel = () => {
     visible: {
       x: 0,
       opacity: 1,
-      transition: {
-        type: 'spring',
-        damping: 18,
-        stiffness: 80,
-        duration: 1.4,
-      },
+transition: {
+  type: 'spring' as const,
+  damping: 18,
+  stiffness: 80,
+  duration: 1.4,
+}
     },
   })
 
@@ -62,12 +62,12 @@ const BrandCarousel = () => {
     visible: {
       opacity: 1,
       scale: 1,
-      transition: {
-        type: 'spring',
-        damping: 14,
-        stiffness: 90,
-        duration: 0.6,
-      },
+transition: {
+  type: 'spring' as const,
+  damping: 18,
+  stiffness: 80,
+  duration: 1.4,
+}
     },
   }
 

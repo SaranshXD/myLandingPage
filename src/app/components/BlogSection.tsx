@@ -79,20 +79,22 @@ export default function BlogSection() {
     },
   };
 
-  const hoverItem = {
-    scale: 1.03,
-    boxShadow: '0 20px 40px rgba(0,0,0,0.2)',
-    transition: { type: 'spring', stiffness: 300 },
-  };
+const hoverItem = {
+  scale: 1.03,
+  boxShadow: '0 20px 40px rgba(0,0,0,0.2)',
+  transition: { type: 'spring' as const, stiffness: 300 },
+};
 
-  const floatingAnim = {
-    y: [0, -15, 0],
-    transition: {
-      duration: 4,
-      ease: 'easeInOut',
-      repeat: Infinity,
-    },
-  };
+
+const floatingAnim = {
+  y: [0, -15, 0],
+  transition: {
+    duration: 4,
+    ease: 'easeInOut' as const,
+    repeat: Infinity,
+  },
+};
+
 
   return (
     <>
