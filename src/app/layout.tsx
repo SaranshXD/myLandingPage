@@ -1,11 +1,27 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import  {Header} from "./components/Header";
+import FeaturesSection from "./components/FeaturesSection";
+import TestimonialsSection from "./components/TestimonialsSection";
+import BannerSection from "./components/BannerSection";
+import BrandCarousel from "./components/BrandCarousel";
+// import Section4 from "./components/section4";
+import BlogSection from "./components/BlogSection";
+import Banner2 from "./components/Banner2";
+import RequestQuoteForm from "./components/RequestQuoteForm";
+import MobileAppSection from "./components/MobileAppSection";
+import Section6 from "./components/Section6";
+import Section7 from "./components/Section7";
+import Section8 from "./components/Section8";
+import Footer from "./components/Footer";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
+
+
+
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -24,11 +40,33 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+       <head>
+        {/* Add this line */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>
+       <Header/>
+       <FeaturesSection/>
+       <TestimonialsSection/>
+       <BannerSection/>
+       <BrandCarousel/>
+       {/* <Section4/> */}
+       <BlogSection/>
+       <Banner2/>
+       <RequestQuoteForm/>
+       <MobileAppSection/>
+       <Section6/>
+       <Section7/>
+       <Section8/>
+       <Footer/>
+  {children}
+        
       </body>
     </html>
   );
 }
+
+
