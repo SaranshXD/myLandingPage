@@ -72,7 +72,7 @@ export default function Banner2() {
             <motion.div
               className="absolute inset-0 bg-no-repeat bg-cover bg-center mb-10"
               style={{
-                backgroundImage: 'url(/assets/Banner2.png)',
+                backgroundImage: 'url(/assets/banner2.png)',
                 minHeight: '652px',
                 zIndex: '-1',
                 filter: 'blur(3px)',
