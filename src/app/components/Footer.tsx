@@ -102,10 +102,11 @@ export default function Footer() {
             {/* Bottom Section */}
             <div className="relative bg-slate-800 py-12">
               <div className="max-w-7xl mx-auto px-6">
-                <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 relative">
+                <div className="  grid grid-cols-1 lg:grid-cols-5 gap-8 relative">
                   <motion.div
-                    className="absolute"
-                    style={{ marginLeft: '-350px' }}
+                    className=" 
+                  md:ml-[-0px] lg:ml-[-0px] xl:ml-[-350px]"
+                    style={{ marginLeft: '',position:'sticky' }}
                     custom={4}
                     variants={itemVariants}
                   >
@@ -114,7 +115,7 @@ export default function Footer() {
                       alt="Logo"
                       width={125}
                       height={125}
-                      className="mt-10"
+                      className="mt-1"
                     />
                   </motion.div>
 

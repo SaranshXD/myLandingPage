@@ -14,6 +14,7 @@ import Section6 from "./components/Section6";
 import Section7 from "./components/Section7";
 import Section8 from "./components/Section8";
 import Footer from "./components/Footer";
+import FaqSection from "./components/FaqSection";
 
 
 export const metadata: Metadata = {
@@ -49,6 +50,7 @@ export default function RootLayout({
        <Section6/>
        <Section7/>
        <Section8/>
+       <FaqSection/>
        <Footer/>
   {children}
         

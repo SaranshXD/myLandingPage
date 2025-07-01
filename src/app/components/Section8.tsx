@@ -36,6 +36,11 @@ const cardVariants = {
     }
   }
 };
+const hoverItem = {
+  scale: 1.03,
+  boxShadow: '0 20px 40px rgba(0,0,0,0.2)',
+  transition: { type: 'spring' as const, stiffness: 300 },
+};
 
 
   const testimonials = [
@@ -113,6 +118,7 @@ const cardVariants = {
                   <motion.div
                     key={testimonial.id}
                     variants={cardVariants}
+                    whileHover={hoverItem}
                   >
                     <Card className={`bg-white h-full ${index === 0 ? 'scale-[1.05]' : ''}`}>
                       <CardContent className="p-6 flex flex-col h-full">
